@@ -17,6 +17,7 @@ interface AutocompleteProps extends Partial<MuiAutocompleteProps<any>> {
 	name: string;
 	label: string;
 	required?: boolean;
+	multiple?: boolean;
 	getOptionValue: (option: any) => any;
 	options: AutocompleteData[];
 	fieldProps?: FieldProps<any, any>;
